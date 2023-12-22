@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="x-icon" href="logo1.png.crdownload">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Works</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* Your existing CSS styles */
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 150vh; /* Set minimum height of the body to 100% of the viewport height */
+            margin: 0; /* Remove default body margin */
+        }
+
+        main {
+            flex: 1; /* Make the main content flex to take remaining vertical space */
+            background-image: url('home.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header {
+            background: white; /* Set the background color to white */
+            padding: 10px;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header:hover {
+            background-color: rgba(0, 0, 0, 0.3); /* Add a transparent background color on hover */
+        }
+
+        .site-title {
+            display: inline-block;
+            margin: 0;
+            vertical-align: middle;
+            font-family: 'Rubik', sans-serif; /* Use the imported Rubik font */
+            font-size: 40px;
+            background: linear-gradient(to right, #F7971E, black);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .site-title a{
+            text-decoration: none; /* Remove the underline for the link within the button */
+            color: white; /* Set the text color to white */
+        }
+
+        .navbar {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .navbar a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #000; /* Change the text color to black */
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .navbar a i {
+            font-size: 28px; /* Adjust the font size for the icons */
+        }
+        .navbar a:hover {
+            color: white;
+        }
+
+        .navbar a:hover i {
+            color: white;
+        }
+
+        .navbar-toggle {
+            display: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .navbar-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #000; /* Change the color of the toggle icon to black */
+            margin-bottom: 5px;
+        }
+
+        /* Button styles */
+        button {
+            padding: 10px 20px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgba(247, 151, 30, 0.5); /* Adjust the alpha value (0.7 for 70% opacity) */
+            color: white;
+            border: 1px solid wheat; /* Update the border style */
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            margin-top: -200px; /* Adjust the margin-top value to create space between the buttons and the main content */
+            width: 100%; /* Set the button width to 100% to occupy the full width of the container */
+        }
+
+        button:hover {
+            background-color: rgba(255, 69, 0, 0.7); /* Adjust the alpha value for hover state */
+        }
+
+        button a {
+            text-decoration: none; /* Remove the underline for the link within the button */
+            color: white; /* Set the text color to white */
+        }
+
+        /* Media queries for responsive styles */
+        @media screen and (max-width: 768px) {
+            header {
+                padding: 10px;
+            }
+
+            .navbar {
+                margin-top: 0;
+                justify-content: flex-end;
+                flex-direction: column;
+                align-items: flex-end;
+                background-color: rgba(0, 0, 0, 0.3);
+                position: absolute;
+                top: 100%;
+                right: 0;
+                left: 0;
+                display: none;
+            }
+
+            .navbar.show {
+                display: flex;
+            }
+
+            .navbar li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .navbar a {
+                display: block;
+                padding: 10px;
+            }
+
+            .navbar a i {
+                font-size: 30px; /* Adjust the font size of the icons as per your requirement */
+            }
+
+            .logo {
+               margin: 0;
+            }
+            
+            /* Adjust styles for the main content */
+            main {
+                margin-top: 100px; /* Increase the margin-top value to create space between the main content and the header */
+            }
+            
+            /* Adjust styles for the buttons */
+            button {
+                margin-top: 20px;
+            }
+        }
+    </style>
+    <script>
+        function toggleNavbar() {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('show');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class="site-title"><a href="Index.html">Finance</a></h1>
+        </div>
+        <div class="navbar-toggle" onclick="toggleNavbar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="navbar">
+            <a href="Index.html"><i class='bx bx-home icon'></i></a>
+            <a href="contact.html"><i class='bx bx-envelope icon'></i></a>
+            <a href="aboutus.html"><i class='bx bx-info-circle icon'></i></a>
+            <a href="work.html"><i class='bx bx-menu icon'></i> </a>
+        </nav>
+    </header>
+
+    <main>
+        <button><a href="GENERAL.html">General journal</a></button>
+        <button><a href="ADJUSTING.html">Adjusting entry</a></button>
+        <button><a href="LEDGER.html">General ledger</a></button>
+        <button><a href="WORKSHEET.html">Worksheet</a></button>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 YourWebsiteName. All rights reserved.</p>
+    </footer>
+</body>
+</html>

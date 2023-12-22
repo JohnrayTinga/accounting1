@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="x-icon" href="logo1.png.crdownload">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* Your existing CSS styles */
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 150vh;
+            margin: 0;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        main {
+            flex: 1;
+            background-image: url('home.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        footer {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header {
+            background: white;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .site-title {
+            margin: 0;
+            font-size: 40px;
+            background: linear-gradient(to right, #F7971E, black);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .site-title a{
+            text-decoration: none; /* Remove the underline for the link within the button */
+            color: white; /* Set the text color to white */
+        }
+
+        .navbar {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .navbar a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .navbar a i {
+            font-size: 28px; /* Adjust the font size for the icons */
+        }
+        .navbar a:hover {
+                color: white;
+            }
+
+            .navbar a:hover i {
+                color: white;
+            }
+
+        .navbar-toggle {
+            display: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .navbar-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #000;
+            margin-bottom: 5px;
+        }
+
+        /* Media queries for responsive navbar */
+        @media screen and (max-width: 768px) {
+            header {
+                padding: 10px;
+            }
+
+            .site-title {
+                font-size: 30px;
+            }
+
+            .navbar {
+                margin-top: 0;
+                justify-content: flex-end;
+                flex-direction: column;
+                align-items: flex-end;
+                background-color: rgba(0, 0, 0, 0.3);
+                position: absolute;
+                top: 100%;
+                right: 0;
+                left: 0;
+                display: none;
+            }
+
+            .navbar.show {
+                display: flex;
+            }
+
+            .navbar li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .navbar a {
+                display: block;
+                padding: 10px;
+            }
+
+            .navbar a i {
+                font-size: 30px;
+            }
+
+            .navbar-toggle {
+                display: block;
+            }
+        }
+
+        /* Media queries for responsive footer */
+        @media screen and (max-width: 480px) {
+            footer {
+                margin-top: 40px;
+            }
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 100px;
+            background-color: #f0f0f0; /* Add your desired background color */
+            border-radius: 20px;
+            background-color: rgba(255, 254, 253, 0.5); /* Adjust the alpha value (0.7 for 70% opacity) */
+
+        }
+
+        .about-us {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            color: #fff;
+        }
+
+        .about-us h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .about-us p {
+            font-size: 18px;
+        }
+    </style>
+    <script>
+        function toggleNavbar() {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('show');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class="site-title"><a href="Index.html">Finance</a></h1>
+        </div>
+        <div class="navbar-toggle" onclick="toggleNavbar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="navbar">
+            <a href="Index.html"><i class='bx bx-home icon'></i></a>
+            <a href="contact.html"><i class='bx bx-envelope icon'></i></a>
+            <a href="aboutus.html"><i class='bx bx-info-circle icon'></i></a>
+            <a href="work.html"><i class='bx bx-menu icon'></i> </a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to Finance, your reliable source for all financial matters. At Finance, we are committed to empowering individuals and businesses with comprehensive financial knowledge and solutions. With a team of seasoned experts, we strive to provide you with the best financial advice and strategies tailored to your needs.</p>
+            <p>Our mission is to guide you towards financial success by offering a range of services, including financial planning, investment management, tax consultancy, and more. We prioritize accuracy, integrity, and exceptional customer service, ensuring that our clients receive personalized assistance to achieve their financial goals.</p>
+            <p>Join us on the journey towards financial stability and growth. Whether you're planning for the future, managing your wealth, or seeking expert guidance, Finance is here to support you every step of the way.</p>        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 YourWebsiteName. All rights reserved.</p>
+    </footer>
+</body>
+</html>
